@@ -31,8 +31,8 @@
 
         <TextView
             android:id="@+id/result"
-            android:layout_width="139dp"
-            android:layout_height="42dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:lines="1"
             android:maxLines="1"
             android:text=""
@@ -41,8 +41,8 @@
             android:textColorHighlight="red"
             android:textSize="24sp"
             tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="69dp"
-            tools:layout_editor_absoluteY="528dp" />
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="129dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
     <LinearLayout
@@ -50,7 +50,92 @@
 
         <Button
             style="@style/buttonNumber"
+            android:textColor="#613E22"
+            android:text="AC" />
+        <Button
+            style="@style/buttonNumber"
+            android:textColor="#613E22"
+            android:text="del" />
+        <Button
+            style="@style/buttonNumber"
+            android:text="" />
+        <Button
+            style="@style/buttonOp"
+            android:textColor="#303353"
+            android:text="/" />
+
+    </LinearLayout>
+    <LinearLayout
+        style="@style/buttonRow">
+
+        <Button
+            style="@style/buttonNumber"
+            android:text="7" />
+        <Button
+            style="@style/buttonNumber"
+            android:text="8" />
+        <Button
+            style="@style/buttonNumber"
             android:text="9" />
+        <Button
+            style="@style/buttonOp"
+            android:textColor="#303353"
+            android:text="X" />
+
+    </LinearLayout>
+    <LinearLayout
+        style="@style/buttonRow">
+
+        <Button
+            style="@style/buttonNumber"
+            android:text="4" />
+        <Button
+            style="@style/buttonNumber"
+            android:text="5" />
+        <Button
+            style="@style/buttonNumber"
+            android:text="6" />
+        <Button
+            style="@style/buttonOp"
+            android:textColor="#303353"
+            android:text="-" />
+
+    </LinearLayout>
+    <LinearLayout
+        style="@style/buttonRow">
+
+        <Button
+            style="@style/buttonNumber"
+            android:text="1" />
+        <Button
+            style="@style/buttonNumber"
+            android:text="2" />
+        <Button
+            style="@style/buttonNumber"
+            android:text="3" />
+        <Button
+            style="@style/buttonOp"
+            android:textColor="#303353"
+            android:text="+" />
+
+    </LinearLayout>
+    <LinearLayout
+        style="@style/buttonRow">
+
+        <Button
+            style="@style/buttonNumber"
+            android:text="." />
+        <Button
+            style="@style/buttonNumber"
+            android:text="0" />
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/buttonNumber"
+            android:layout_weight="2"
+            android:background="#303353"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:onClick="equalsAct"
+            android:text="=" />
 
     </LinearLayout>
 
